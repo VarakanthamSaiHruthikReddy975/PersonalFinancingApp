@@ -10,6 +10,6 @@ public interface UserRoleService {
     UserRoleDTO updateUserRole(Long userRoleId, UserRoleDTO userRoleDTO);
     void deleteUserRole(Long userRoleId);
     Optional<UserRoleDTO> getUserRoleById(Long userRoleId);
-    List<UserRoleDTO> getUserRolesByUserId(Long userId);
+    Optional<List<UserRoleDTO>> getUserRolesByUserId(Long userId);
     List<UserRoleDTO> getUserRolesByRoleId(Long roleId);
 }

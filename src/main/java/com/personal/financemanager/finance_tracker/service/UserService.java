@@ -8,7 +8,7 @@ import java.util.Optional;
 public interface UserService {
     UserDTO createUser(UserDTO userDTO);
 
-    UserDTO updateUser(Long Id);
+    UserDTO updateUser(Long Id, UserDTO userDTO);
 
     String deleteUser(Long Id);
 

@@ -11,8 +11,8 @@ import org.mapstruct.MappingTarget;
 @Mapper(componentModel = "spring")
 public interface UserRoleMapper {
 
-    UserRoleDTO toDTO(User user);
-    User toEntity(UserDTO userDTO);
+    UserRoleDTO toDTO(UserRole userRole);
+    UserRole toEntity(UserRoleDTO userRoleDTO);
 
     @Mapping(target = "id", ignore = true)
     void updateEntityFromDTOUserRole(UserRoleDTO userDTO, @MappingTarget UserRole userRole);
